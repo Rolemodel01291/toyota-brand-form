@@ -1,0 +1,1 @@
+export const SET_BRAND_INFO = 'SET_BRAND_INFO';

@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Toyota Type';
+    src: url('./static/font/ToyotaType-Light.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota Type Normal';
+    src: url('./static/font/ToyotaType-Regular.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota Type Book';
+    src: url('./static/font/ToyotaType-Book.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota Type Bold Normal';
+    src: url('./static/font/ToyotaType-Bold.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota_Type_Bold_900';
+    src: url('./static/font/ToyotaType-Black.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota_Type_Bold_600';
+    src: url('./static/font/ToyotaType-Semibold.woff2') format('woff2'),
+        url('./static/font/ToyotaType-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Powertorque Normal';
+    src: url('./static/font/AltonaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Powertorque_Bold';
+    src: url('./static/font/AltonaSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Powertorque_Extra_Bold';
+    src: url('./static/font/futura-lt-bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazda_Normal';
+    src: url('./static/font/MazdaFonts/MazdaTypeTT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazda_Bold';
+    src: url('./static/font/MazdaFonts/MazdaTypeTT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazda_Extra_Bold';
+    src: url('./static/font/MazdaFonts/MazdaTypeTT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Power_Alliance_Normal';
+    src: url('./static/font/PowerAllianceFonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Power_Alliance_Bold';
+    src: url('./static/font/PowerAllianceFonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Power_Alliance_Extra_Bold';
+    src: url('./static/font/PowerAllianceFonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hino_Basic';
+    src: url('./static/font/HinoFonts/HelveticaLTStd-Roman.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hino_Bold';
+    src: url('./static/font/HinoFonts/HelveticaLTStd-Roman.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hino_Extra_Bold';
+    src: url('./static/font/HinoFonts/HelveticaLTStd-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexus_Basic';
+    src: url('./static/font/LexusFonts/Nobel-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexus_Bold';
+    src: url('./static/font/LexusFonts/Nobel-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexus_Extra_Bold';
+    src: url('./static/font/LexusFonts/Nobel\ Regular.ttf') format('truetype');
+}
+
+
+
+@media screen and (max-width: 475px){
+    .makeStyles-root-2,
+    .MuiFormControl-root,
+    .makeStyles-root-1 {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "ToyotaVerify",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.9.10",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.49",
+    "@material-ui/pickers": "^3.2.10",
+    "@progress/kendo-react-upload": "^3.12.0",
+    "@redux-beacon/google-analytics": "^1.2.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "date-fns": "^2.12.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "material-ui-dropzone": "^2.4.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^10.2.2",
+    "react-favicon": "0.0.18",
+    "react-input-mask": "^2.0.4",
+    "react-meta-tags": "^0.7.4",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.4.1",
+    "react-swipeable-views": "^0.13.9",
+    "react-swipeable-views-core": "^0.13.7",
+    "react-swipeable-views-utils": "^0.13.9",
+    "react-verification-code-input": "^1.2.3",
+    "redux": "^4.0.5",
+    "redux-beacon": "^2.1.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-form": "^8.3.3",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "styled-components": "^5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

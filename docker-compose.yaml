@@ -1,0 +1,24 @@
+version: "3"
+services:
+  setup:
+    image: node:13
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: yarn install
+
+  app:
+    image: node:13
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - S3_BUCKET=development-uis3bucket-idpl3mlerwsp
+      - REACT_APP_BRAND=powertorque-finance
+#     - REACT_APP_API_URL=https://toyotafinance-hardship-devreprise.verifier.me/api
+      - REACT_APP_API_URL=http://localhost:9000/api
+      - TARGET_CLOUDFRONT_DIST_ID=E3IS9U72AN7SQW
+    command: yarn start

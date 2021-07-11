@@ -1,0 +1,44 @@
+image: atlassian/pipelines-awscli
+
+pipelines:
+  branches:
+    # Run this pipeline on all release branches
+    release/*:
+      - step:
+          name: build
+          image: node:12.13.0
+          script:
+            # Load environment variables
+            - source env.sh
+
+            # Load environment variables for this environment
+            - source env.${ENV_NAME}.sh
+
+            # Build React app for production
+            - npm install
+            # Set to false to ignore build errors for now
+            - CI=false npm run build
+
+          artifacts:
+            - build/**
+
+      - step:
+          name: deploy
+          script:
+            # Load environment variables
+            - source env.sh
+
+            # Load environment variables for this environment
+            - source env.${ENV_NAME}.sh
+
+            # Upload to s3
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET
+                LOCAL_PATH: $LOCAL_PATH
+
+            # invalidate the cache so that we get the new website
+            - aws cloudfront create-invalidation --distribution-id=${TARGET_CLOUDFRONT_DIST_ID} --paths '/*'
